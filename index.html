@@ -27,48 +27,46 @@
 
         <main class="main-content">
         </main>
-    </div>
 
-    <div id="modal" class="modal hidden">
-        <form name="addTask" class="modal-content">
-            <div class="btn">
-                <button type="button" id="closeModal" class="close-button"><img src="./assets/icons8-x-48.png" alt=""></button>
-            </div>
-            <div class="modal-header">
-                <input type="text" placeholder="Add a new task" class="task-input" name="task" required>
-            </div>
-            <div class="modal-body">
-                <select id="task_type" class="task-select">
-                    <option>Personal</option>
-                    <option>Work</option>
-                </select>
-                <select id="task_dificulty" class="task-select">
-                    <option>Medium</option>
-                    <option>High</option>
-                    <option>Low</option>
-                </select>
-                <input type="date" class="task-date" required>
-                <input type="text" placeholder="Add notes" class="task-notes">
-                <button class="submit-task">Add Task</button>
-            </div>
-        </form>
-        <form name="addCard" class="modal-content">
-            <div class="btn">
-                <button type="button" id="closeModal" class="close-button">
-                    <img src="./assets/icons8-x-48.png" alt="">
-                </button>
-            </div>
-            <div class="modal-header">
-                <input type="text" placeholder="Add a new card" class="cardInput task-input" name="title">
-            </div>
-            <div class="modal-body">
-                <button class="submit-task">Add Card</button>
-            </div>
-        </form>
-    </div>
-    <script src="./js/db.js"></script>
-    <script src="./js/reload.js"></script>
-    <script src="./js/script.js"></script>
+        <div id="modal" class="modal hidden">
+            <form name="addTask" class="modal-content">
+                <div class="btn">
+                    <button type="button" id="closeModal" class="close-button"><img src="./assets/icons8-x-48.png"
+                            alt=""></button>
+                </div>
+                <div class="modal-header">
+                    <input type="text" placeholder="Add a new task" class="task-input" name="task" required>
+                </div>
+                <div class="modal-body">
+                    <select id="task_type" class="task-select">
+                        <option>Personal</option>
+                        <option>Work</option>
+                    </select>
+                    <select id="task_dificulty" class="task-select">
+                        <option>Medium</option>
+                        <option>High</option>
+                        <option>Low</option>
+                    </select>
+                    <input type="date" class="task-date" required>
+                    <input type="text" placeholder="Add notes" class="task-notes">
+                    <button type="submit" class="submit-task">Add Task</button>
+                </div>
+            </form>
+            <form name="addCard" class="modal-content">
+                <div class="btn">
+                    <button type="button" id="closeModal" class="close-button">
+                        <img src="./assets/icons8-x-48.png" alt="">
+                    </button>
+                </div>
+                <div class="modal-header">
+                    <input type="text" placeholder="Add a new card" class="cardInput task-input" name="title">
+                </div>
+                <div class="modal-body">
+                    <button type="submit" class="submit-task">Add Card</button>
+                </div>
+            </form>
+        </div>
+        <script src="./js/db.js"></script>
+        <script src="./js/reload.js"></script>
+        <script src="./js/script.js"></script>
 </body>
-
-</html>
